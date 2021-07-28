@@ -1,1 +1,1 @@
-sudo pacman -S nvm ghostscript terraform aws-cli cmake htop tmux pyenv vim docker docker-compose vlc telegram-desktop gcc yaml-cpp interception-tools ttf-jetbrains-mono jq libreoffice-fresh
+sudo pacman -S nvm ghostscript terraform aws-cli cmake htop tmux pyenv vim docker docker-compose vlc telegram-desktop gcc yaml-cpp interception-tools ttf-jetbrains-mono jq libreoffice-fresh bluez-utils

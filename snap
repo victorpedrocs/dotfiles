@@ -1,3 +1,9 @@
+# enable snap socket
+sudo systemctl enable --now snapd.socket
+
+# enable classic snap support
+sudo ln -s /var/lib/snapd/snap /snap
+
 sudo snap install slack --classic
 sudo snap install code --classic
 sudo snap install spotify
