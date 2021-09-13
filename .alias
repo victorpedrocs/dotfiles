@@ -1,7 +1,7 @@
 alias tf=terraform
 alias dotenv='export $(cat env | xargs)'
 alias dcd="docker-compose down"
-alias dcu="docker-compose-up"
+alias dcu="docker-compose up"
 alias vim=nvim
 
 drm() {
