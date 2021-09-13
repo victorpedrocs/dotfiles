@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/vpcsilva/.oh-my-zsh"
+export ZSH="/home/victor/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -86,7 +86,7 @@ export NVM_DIR="$HOME/.nvm"
 source /usr/share/nvm/init-nvm.sh
 
 # Agnoster config
-export DEFAULT_USER=vpcsilva
+export DEFAULT_USER=victor
 
 # Aliases
 source "$HOME/.alias"
@@ -96,4 +96,9 @@ export OPENCV_LOG_LEVEL=ERROR
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /home/vpcsilva/Work/workspace/sqs-client/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/vpcsilva/Work/workspace/sqs-client/node_modules/tabtab/.completions/electron-forge.zsh
+[[ -f /home/victor/Work/workspace/sqs-client/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/victor/Work/workspace/sqs-client/node_modules/tabtab/.completions/electron-forge.zsh
+
+
+# npm plugin
+export PATH="$PATH:$NVM_DIR/versions/node/$(node -v)/bin"
+
