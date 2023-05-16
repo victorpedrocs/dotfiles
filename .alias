@@ -1,9 +1,26 @@
+#!/bin/bash
 alias tf=terraform
-alias dotenv='export $(cat env | xargs)'
+alias dotenv='export $(cat .env | xargs)'
 alias dcd="docker-compose down"
 alias dcu="docker-compose up"
-alias vim=nvim
+alias dcs="docker-compose stop"
+alias vi=nvim
+alias v=nvim
 
-drm() {
+function drm () {
   docker rm $(docker ps -a | grep $1 | awk '{print $1}')
+}
+
+function gacmsgp() {
+  ga . && gcmsg $1 && gp
+}
+
+function asdf() {
+  if systemctl is-active --quiet udevmon.service; then
+    echo "Stopping udevmon"
+    sudo systemctl stop udevmon.service
+  else
+    echo "Starting udevmon"
+    sudo systemctl start udevmon.service
+  fi
 }
