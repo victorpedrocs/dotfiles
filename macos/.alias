@@ -1,0 +1,19 @@
+#!/bin/bash
+alias tf=terraform
+alias dotenv='export $(cat .env | xargs)'
+alias dcd="docker-compose down"
+alias dcu="docker-compose up"
+alias dcs="docker-compose stop"
+alias vi=nvim
+alias v=nvim
+# tmux new session named as current folder
+alias tsf=tmux new-session -s $(basename "$PWD")
+
+function drm () {
+  docker rm $(docker ps -a | grep $1 | awk '{print $1}')
+}
+
+function gacmsgp() {
+  ga . && gcmsg $1 && gp
+}
+

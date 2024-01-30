@@ -6,6 +6,8 @@ alias dcu="docker-compose up"
 alias dcs="docker-compose stop"
 alias vi=nvim
 alias v=nvim
+# tmux new session named as current folder
+alias tsf="ts $(basename $PWD)"
 
 function drm () {
   docker rm $(docker ps -a | grep $1 | awk '{print $1}')
@@ -23,4 +25,14 @@ function asdf() {
     echo "Starting udevmon"
     sudo systemctl start udevmon.service
   fi
+}
+
+# mfa aws
+alias aws="aws-mfa-secure session"
+
+# Deel
+alias dl=deel-local
+## kill backend
+function killbe() {
+ kill -9 $(netstat -vanp tcp | grep 3030 | awk '{print $9}') 
 }

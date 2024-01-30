@@ -77,6 +77,7 @@ plugins=(
 	z
 	yarn
 	terraform
+	tmux
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -1,0 +1,4 @@
+# Show app switcher on all connected displays
+defaults write com.apple.Dock appswitcher-all-displays -bool true
+defaults write com.apple.universalaccess reduceTransparency -bool true
+defaults write com.apple.Accessibility ReduceMotionEnabled -bool true

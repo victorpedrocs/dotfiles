@@ -1,0 +1,28 @@
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# install packages
+brew install /
+git /
+devtoys /
+rectangle /
+neovim /
+spotify /
+bitwarden /
+nvm /
+terraform /
+awscli /
+tmux /
+vlc /
+ripgrep /
+pyenv /
+yt-dlp
+
+# install gui apps
+brew install --cask /
+docker /
+iterm2 /
+karabiner-elements
+
+# Nerd Font
+brew tap homebrew/cask-fonts && brew install --cask font-jetbrains-mono-nerd-font

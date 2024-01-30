@@ -1,0 +1,57 @@
+
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/victor/.zrofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# install packages
+brew install /
+automake /
+awscli /
+ffmpeg /
+gh /
+git /
+gnu-sed /
+htop /
+lazygit /
+libpq /
+neovim /
+nvm /
+osx-cross/arm/arm-gcc-bin@8 /
+pyenv /
+rbenv /
+ripgrep /
+telnet /
+texinfo /
+tmux /
+yt-dlp /
+
+# install gui apps
+brew install --cask /
+bitwarden
+aws-vpn-client
+browserosaurus
+dbeaver-community
+eqmac
+firefox
+iterm2
+karabiner-elements
+keepingyouawake
+logitech-options
+loom
+mailspring
+monitorcontrol
+musescore
+obsidian
+openlens
+paw
+qmk-toolbox
+rancher
+rectangle
+slack
+the-unarchiver
+vlc
+vscodium
+
+# Nerd Font
+brew tap homebrew/cask-fonts && brew install --cask font-jetbrains-mono-nerd-font
