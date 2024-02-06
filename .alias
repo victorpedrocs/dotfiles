@@ -32,7 +32,3 @@ alias aws="aws-mfa-secure session"
 
 # Deel
 alias dl=deel-local
-## kill backend
-function killbe() {
- kill -9 $(netstat -vanp tcp | grep 3030 | awk '{print $9}') 
-}
