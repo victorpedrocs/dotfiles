@@ -16,7 +16,8 @@ tmux /
 vlc /
 ripgrep /
 pyenv /
-yt-dlp
+yt-dlp /
+eza
 
 # install gui apps
 brew install --cask /
