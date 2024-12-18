@@ -6,6 +6,7 @@ alias dcu="docker-compose up"
 alias dcs="docker-compose stop"
 alias vi=nvim
 alias v=nvim
+alias ls=eza
 # tmux new session named as current folder
 alias tsf="ts $(basename $PWD)"
 
@@ -27,8 +28,8 @@ function asdf() {
   fi
 }
 
-# mfa aws
-alias aws="aws-mfa-secure session"
+alias npmlogin="export CODEARTIFACT_AUTH_TOKEN=\`aws codeartifact get-authorization-token --domain npm --domain-owner 974360507615 --profile shared --region eu-west-1 --query authorizationToken --output text\`"
 
-# Deel
-alias dl=deel-local
+function htdown() {
+  yt-dlp -o "$1" --referer $2 $3
+}
