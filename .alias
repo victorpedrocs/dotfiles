@@ -7,6 +7,10 @@ alias dcs="docker-compose stop"
 alias vi=nvim
 alias v=nvim
 alias ls=eza
+alias lg=lazygit
+alias vol1='osascript -e "set volume output volume 1"'
+alias npxt='npx jest --no-coverage --verbose'
+
 # tmux new session named as current folder
 alias tsf="ts $(basename $PWD)"
 
